@@ -172,6 +172,51 @@ body {
     }
 }
 
+/* Showcase Scroll */
+.showcase-scroll {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.showcase-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.screenshot-item {
+    flex: 0 0 auto;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.screenshot-item:hover {
+    transform: scale(1.05);
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    border: 4px solid #fff;
+    border-radius: 20px;
+}
+
+/* Tablet Mockup */
+.tablet-mockup {
+    border: 12px solid #2d343f;
+    border-radius: 2rem !important;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+}
+
+.tablet-mockup img {
+    display: block;
+    width: 100%;
+}
+
 .hero-mockup-animation {
     animation: float 6s ease-in-out infinite;
 }
