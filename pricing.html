@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ücretlendirme | Worklava</title>
+    <meta name="description"
+        content="Worklava uygun fiyatlı ve esnek ücretlendirme modelleri. Kullanıcı başına şeffaf fiyatlandırma ile personel takibini modernize edin.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .pricing-hero {
+            padding-top: 140px;
+            padding-bottom: 60px;
+            background: radial-gradient(circle at top right, rgba(13, 110, 253, 0.05), transparent);
+        }
+
+        .pricing-card {
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card.popular {
+            border: 2px solid var(--primary-color);
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .pricing-card.popular::before {
+            content: "EN POPÜLER";
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 40px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            transform: rotate(45deg);
+        }
+
+        .price-tag {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+
+        .price-currency {
+            font-size: 1.25rem;
+            font-weight: 600;
+            vertical-align: super;
+        }
+
+        .price-period {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .feature-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-dark);
+        }
+
+        .feature-list i {
+            color: #20c997;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="text-primary">Work</span>lava
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#ozellikler">Özellikler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#ekranlar">Uygulama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pricing.html">Ücretlendirme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="support.html">Destek</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary rounded-pill px-4" href="#satis-formu">Hemen Başlayın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pricing-hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">Şeffaf ve Esnek <span
+                    class="text-gradient">Fiyatlandırma</span></h1>
+            <p class="lead text-secondary mb-5" data-aos="fade-up" data-aos-delay="100">İşletmenizin büyüklüğüne göre en
+                uygun paketi seçin, gizli maliyetlerle uğraşmayın.</p>
+        </div>
+    </header>
+
+    <!-- Pricing Tables -->
+    <section class="pb-100">
+        <div class="container">
+            <div class="row g-4 justify-content-center align-items-stretch">
+                <!-- Standard Plan -->
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="pricing-card popular h-100 p-5 bg-white rounded-5 shadow-lg">
+                        <div class="mb-4">
+                            <h3 class="fw-bold mb-1">Standart Paket</h3>
+                            <p class="text-muted small">Kullanıcı başına öde, esnek kal.</p>
+                        </div>
+                        <div class="mb-4">
+                            <span class="price-currency">₺</span>
+                            <span class="price-tag">100</span>
+                            <span class="price-period">/ Kullanıcı / Ay</span>
+                        </div>
+                        <ul class="list-unstyled feature-list mb-5">
+                            <li><i class="bi bi-check-circle-fill"></i> Sınırsız Konum Tanımlama</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Selfie ile Doğrulama</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Canlı Mesai Takibi</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Otomatik Puantaj Raporları</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Mobil Uygulama (iOS & Android)</li>
+                            <li><i class="bi bi-check-circle-fill"></i> E-posta Destek</li>
+                        </ul>
+                        <a href="#satis-formu"
+                            class="btn btn-primary btn-lg w-100 rounded-pill fw-bold py-3 shadow-sm">Satın Al /
+                            Başvur</a>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="pricing-card h-100 p-5 bg-white rounded-5 shadow-sm">
+                        <div class="mb-4">
+                            <h3 class="fw-bold mb-1">Enterprise</h3>
+                            <p class="text-muted small">Büyük ölçekli operasyonlar için özel çözümler.</p>
+                        </div>
+                        <div class="mb-4">
+                            <span class="price-tag">Özel</span>
+                            <span class="price-period">/ Teklif Alın</span>
+                        </div>
+                        <ul class="list-unstyled feature-list mb-5">
+                            <li><i class="bi bi-check-circle-fill"></i> Standart Paketin Tüm Özellikleri</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Özel API Entegrasyonları</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 7/24 Özel Destek Hattı</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Kurumsal Raporlama Araçları</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Yerinde Kurum & Eğitim</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Kişiselleştirilmiş Kontrol Paneli</li>
+                        </ul>
+                        <a href="#satis-formu"
+                            class="btn btn-outline-dark btn-lg w-100 rounded-pill fw-bold py-3">Teklif İsteyin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sales Form Section -->
+    <section id="satis-formu" class="section-padding bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h2 class="fw-bold display-5">Hemen <span class="text-primary">Başlayalım</span></h2>
+                        <p class="opacity-75">Ekibinizi modernize etmek için ilk adımı atın. Formu doldurun, size en
+                            kısa sürede ulaşalım.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-5 shadow-lg text-dark" data-aos="zoom-in">
+                        <form action="https://formspree.io/f/xeelldlp" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label small fw-bold">AD SOYAD</label>
+                                    <input type="text" name="name"
+                                        class="form-control form-control-lg bg-light border-0 rounded-3"
+                                        placeholder="Atahan Çelebi" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label small fw-bold">ŞİRKET ADI</label>
+                                    <input type="text" name="company"
+                                        class="form-control form-control-lg bg-light border-0 rounded-3"
+                                        placeholder="Şirketiniz" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label small fw-bold">E-POSTA</label>
+                                    <input type="email" name="email"
+                                        class="form-control form-control-lg bg-light border-0 rounded-3"
+                                        placeholder="ornek@sirket.com" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label small fw-bold">TELEFON</label>
+                                    <input type="tel" name="phone"
+                                        class="form-control form-control-lg bg-light border-0 rounded-3"
+                                        placeholder="0555 --- -- --" required>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label class="form-label small fw-bold">İLGİLENDİĞİM PAKET</label>
+                                    <select name="package"
+                                        class="form-select form-select-lg bg-light border-0 rounded-3">
+                                        <option value="Standart">Standart Paket (100 TL / Kullanıcı)</option>
+                                        <option value="Enterprise">Enterprise (Özel Teklif)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <label class="form-label small fw-bold">NOTUNUZ (OPSİYONEL)</label>
+                                    <textarea name="message" class="form-control bg-light border-0 rounded-3" rows="4"
+                                        placeholder="Eklemek istediğiniz detaylar..."></textarea>
+                                </div>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-primary btn-lg w-100 rounded-pill fw-bold py-3 shadow">Başvuruyu
+                                Gönder</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="text-center opacity-50 small">
+                © 2025 Worklava - Tüm hakları saklıdır. <br>
+                <a href="index.html" class="text-white text-decoration-none mx-2">Ana Sayfa</a>
+                <a href="privacy-policy.html" class="text-white text-decoration-none mx-2">KVKK</a>
+                <a href="support.html" class="text-white text-decoration-none mx-2">Destek</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+
+</html>

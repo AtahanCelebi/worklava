@@ -7,6 +7,12 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://worklava.com.tr/pricing.html</loc>
+        <lastmod>2025-02-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
         <loc>https://worklava.com.tr/support.html</loc>
         <lastmod>2025-02-21</lastmod>
         <changefreq>monthly</changefreq>
