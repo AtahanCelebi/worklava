@@ -20,14 +20,7 @@ Worklava, Apple Store ve Google Play politikalarına tam uyumlu şekilde gelişt
 <p align="center">
   <img src="assets/img/and-1.png" width="30%" />
   <img src="assets/img/and-2.png" width="30%" />
-  <img src="assets/img/and-4.png" width="30%" />
+  <img src="assets/img/and-6.png" width="30%" />
 </p>
-
-## 🌐 Teknik Detaylar
-
-Bu proje, Worklava uygulamasının tanıtımı için hazırlanmış statik bir landing page'dir. 
-- **Teknolojiler:** HTML5, CSS3, Bootstrap 5, Javascript, AOS (Animate on Scroll).
-- **Yayın:** GitHub Pages üzerinden statik olarak sunulmaktadır.
-
 ---
-© 2025 Worklava Teknoloji A.Ş. - Ankara, Türkiye
+© 2025 Worklava. - Ankara, Türkiye
