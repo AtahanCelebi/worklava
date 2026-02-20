@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #0d6efd;
+    --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #20c997 100%);
+    --dark-bg: #0b0e14;
+    --light-bg: #f8f9fa;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+/* Typography */
+.text-gradient {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Section Spacing */
+.section-padding {
+    padding: 100px 0;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: radial-gradient(circle at top right, rgba(13, 110, 253, 0.05), transparent),
+        radial-gradient(circle at bottom left, rgba(32, 201, 151, 0.05), transparent);
+}
+
+.hero-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-mockup {
+    width: 300px;
+    height: 600px;
+    background: #1a1e26;
+    border-radius: 40px;
+    padding: 12px;
+    border: 8px solid #2d343f;
+    position: relative;
+    z-index: 2;
+    animation: float 6s ease-in-out infinite;
+}
+
+.phone-mockup .screen {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.app-header {
+    background: #f8f9fa;
+    padding-bottom: 10px;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+.glow-bg {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: var(--primary-gradient);
+    filter: blur(100px);
+    opacity: 0.15;
+    z-index: 1;
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08) !important;
+}
+
+.icon-box {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, 0.05);
+    border-radius: 16px;
+}
+
+/* Security Card */
+.security-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, #1a1e26 0%, #0b0e14 100%) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--primary-gradient);
+    border: none;
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(13, 110, 253, 0.3);
+}
+
+.btn-dark {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Step Icons */
+.step-icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.step-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+}
+
+/* Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.hero-mockup-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .hero-section {
+        padding-top: 100px;
+    }
+}
