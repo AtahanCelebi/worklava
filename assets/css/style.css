@@ -136,6 +136,45 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Coming Soon Ribbon */
+.coming-soon-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50rem;
+}
+
+.coming-soon-wrapper .btn {
+    opacity: 0.8;
+}
+
+.coming-soon-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.coming-soon-ribbon span {
+    position: absolute;
+    display: block;
+    width: 100px;
+    padding: 4px 0;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 0.55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    right: -25px;
+    top: 10px;
+    transform: rotate(45deg);
+}
+
 /* Step Icons */
 .step-icon-wrapper {
     position: relative;
